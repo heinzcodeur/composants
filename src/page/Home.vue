@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-10 mx-auto">
                 <h2 class="text-primary text-center">Bagnoles</h2>
-                <bagnole-row v-for="(data, index) in data_bagnole" :key="index"/>
+                <bagnole-row v-for="(data, index) in 3" :key="index"/>
             </div>
         </div>
     </div>
@@ -46,8 +46,8 @@
                         three_bagnole.push(new_bagnole);
                     }
                 }
-                console.log('ca marche?')
-                console.log(data_bagnole)
+                // console.log('ca marche?')
+                // console.log(data_bagnole)
             }
 
             onMounted(make_data_bagnole);

@@ -1,8 +1,7 @@
 <template>
     <div class="row">
-        <bagnole-card></bagnole-card>
-        <bagnole-card></bagnole-card>
-        <bagnole-card></bagnole-card>
+        <bagnole-card v-for="(card, i) in 3" :key="3"></bagnole-card>
+        
        <!-- <h3 class="text-bg-danger">bagnole</h3> -->
     </div>
 </template>
