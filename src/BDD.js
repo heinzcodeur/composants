@@ -16,7 +16,7 @@ const info = [
     {
         marque:'OPEL',
         reference:'corsa',
-        image: 'assets/images/opel-corsa.jpg',
+        image: 'assets/images/opel-corsa.png',
         note: '4.5',
         kilometrage: 20390
     },
@@ -37,7 +37,7 @@ const info = [
     {
         marque:'RENAULT',
         reference:'Clio 5',
-        image: 'assets/images/clio-5.jpg',
+        image: 'assets/images/clio-5.png',
         note: '4.5',
         kilometrage: 49900
     },
@@ -58,7 +58,7 @@ const info = [
     {
         marque:'TOYOTA',
         reference:'Hybrid',
-        image: 'assets/images/toyota.jpg',
+        image: 'assets/images/toyota.png',
         note: '4.5',
         kilometrage: 119000
     }

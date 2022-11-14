@@ -1,7 +1,8 @@
 <template>
     <div class="row">
-        <bagnole-card v-for="(card, i) in 3" :key="3"></bagnole-card>
-        
+        <bagnole-card v-for="(card, i) in three_cars" :key="i" :car="card"/>
+
+
        <!-- <h3 class="text-bg-danger">bagnole</h3> -->
     </div>
 </template>
@@ -13,6 +14,9 @@
         name: "BagnoleRow",
         components:{
             BagnoleCard
+        },
+        props:{
+            three_cars:Array
         }
     }
 </script>

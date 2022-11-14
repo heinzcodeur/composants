@@ -2,17 +2,15 @@
     <div class="container">
         <div class="row">
             <div class="col-10 mx-auto">
-                <h2 class="text-primary text-center">Bagnoles</h2>
-                <bagnole-row v-for="(data, index) in 3" :key="index"/>
+                <bagnole-row v-for="(data, i) in data_bagnole" :key="i" :three_cars="data"/>
             </div>
         </div>
     </div>
 </template>
-
 <script>
     import BDD from '../BDD'
-    import {onMounted } from 'vue'
     import BagnoleRow from '../components/BagnoleRow.vue'
+    import { onMounted, ref } from 'vue'
 
     export default {
         name: "Home",
@@ -30,7 +28,7 @@
                 }
             }
 
-            let data_bagnole = []
+            let data_bagnole = ref([])
 
             const make_data_bagnole = () => {
                 let three_bagnole = [];
@@ -40,14 +38,14 @@
                     //three_bagnole.push(new_bagnole)
                     if (three_bagnole.length === 2) {
                         three_bagnole.push(new_bagnole);
-                        data_bagnole.push(three_bagnole)
+                        data_bagnole.value.push(three_bagnole)
                         three_bagnole = []
                     }else {
                         three_bagnole.push(new_bagnole);
                     }
                 }
                 // console.log('ca marche?')
-                // console.log(data_bagnole)
+                console.log(data_bagnole)
             }
 
             onMounted(make_data_bagnole);
